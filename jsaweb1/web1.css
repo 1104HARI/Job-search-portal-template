@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    position: relative;
+}
+nav{
+    background: rgb(1, 16, 77);
+    
+    height:10%;
+    position:fixed;
+    
+
+    list-style: none;
+    width: 100%;
+}
+label.logo{
+    color: rgb(255, 255, 255);
+    font-size:35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav ul{
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size:17px;
+    padding:7px 13px;
+    border-radius:  3px;
+    text-transform: uppercase;
+}
+a.hover{
+    background: rgb(8, 12, 123);
+    transition:  .5s;
+    border-radius: 10px;
+}
+.cbutton{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display:none;
+}
+@media(max-width:952px){
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+}
+@media(max-width:858px){
+    .cbutton{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(45deg, rgb(3, 0, 30), rgb(69, 64, 210));
+        
+        
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin:  50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+        color: rgb(255, 255, 255);
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .header{
+        position: relative;
+    }
+    
+    
+}
+
+.searchcard{
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5px;
+    background-color: rgb(1, 16, 77);
+}
+.p{
+    color: aqua;
+    background-color: aqua;
+}
+.search-input{
+    height: 100%;
+    width:100%;
+    border: rgb(1, 16, 77);
+    padding: 0.5rem;
+    color: rgb(1, 16, 77);
+    font-weight: 500;
+    font-weight: bold;
+    
+    
+    
+}
+::placeholder{
+    color: rgb(1, 16, 77);
+}
+.search-button{
+    width:200px;
+    background-color: rgb(1, 16, 77);
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+    
+}
+.filter-box{
+    height: auto;
+    font-size: 0.8rem;
+    min-width: 300px;
+    margin-left: 10%;
+    padding: 20px;
+    border-color: rgb(1, 16, 77);
+}
+.fdropdown{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;   
+    gap:15px;
+}
+.sel{
+    border: 3px solid rgb(1, 16, 77);
+       
+}
+.sel option{
+    background-color: rgb(1, 16, 77);
+    color: white;
+}
+.sel{
+    color: rgb(1, 16, 77);
+    background-color: white;
+}
+.fchosen{
+    display: flex;
+    padding-left: 20%;
+}
+.ccard{
+    background-color: rgb(1, 16, 77);
+    padding: 0.2rem 0.5rem ;
+    margin-left: 2%;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    
+    align-items: center;
+    margin-bottom: 2px;
+}
+.jlist{
+    margin: 5%;
+    padding: 1rem;
+    background-color: rgb(1, 16, 77);
+}
+.jcard{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    min-height: 100px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: black 0px 1px 4px;
+}
+.jcard:hover{
+    box-shadow: black 0px 4px 12px;
+}
+.jname{
+    display: flex;
+}
+.jprofile{
+    width: 60px;
+    height: 60px;
+    margin:0.5rem;
+}
+.jdetail{
+    padding:0 10px;
+}
+.jdetail h4{
+    color:rgb(1, 16, 77);
+}
+.jdetail p{
+    color:rgb(1, 16, 77);
+    
+}
+.jlabel{
+    display: flex;
+    flex-wrap: wrap;
+}
+.jlabel a{
+    text-decoration: none;
+    color: rgb(1, 16, 77);
+    width: 100px;
+    display: flex;
+
+}
+.jposted{
+    color: rgb(1, 16, 77);
+    padding: 20px;
+}
+.mlist{
+    color: rgb(1, 16, 77);
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    margin-left: 45%;
+    border: 1px solid rgb(1, 16, 77);
+}
+.image img{
+    width: 30%;
+    margin-left: 2%;
+
+}
+.image img:hover{
+    border: 1px solid black;
+    
+}
+.featured{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: rgb(1, 16, 77);
+    color: white;
+}
+.fimg{
+    height: 50px;
+    margin-bottom: 0.2rem;
+    width: 50px;
+}
+.stitle{
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5;
+    font-size: 36px;
+}
+.fwrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap:2rem;
+    align-items: center;
+    width: 100%;
+    padding: 2% 10%;
+}
+.fcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: black 0px 1px 4px;
+}
+.fcard:hover{
+    box-shadow: black 0px 7px 29px 0px;
+}
+.fbutton{
+    border: 1px solid rgb(1, 16, 77);
+    background-color: transparent;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    cursor: pointer;
+    color: rgb(1, 16, 77);
+}
+.fbutton:hover{
+    background-color: rgb(1, 16, 77);
+    color: white;
+}
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    align-items: center;
+    margin-left: 10%;
+}
+.wrapper h1{
+    margin-left: 45%;
+    color: rgb(1, 16, 77);
+}
+.wrapper .test{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    gap: 16px;
+    overflow: hidden;
+}
+.test .card{
+    list-style: none;
+    background: rgb(1, 16, 77);
+    border-radius: 8px;
+    color: white;
+    padding-bottom: 15px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+.card .img{
+    width: 148px;
+    height: 148px;
+}
+.card .img img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+.card p{
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 25px 5px;
+
+}
+.card span{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+
+
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgb(1, 16, 77);
+    color: white;
+    padding: 3rem;
+}
+.footwrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footwrapper h3,.footwrapper h4{
+    font-size: 23px;
+
+}
+.footwrapper a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+}
+.footwrapper a:hover{
+    text-decoration: underline;
+    color: rgb(1, 16, 77);
+}
+.social-media{
+    margin-top: 1rem;
+
+}
+.social-media a{
+   text-decoration: none;
+   color: white;
+   margin-right: 10px;
+   
+}

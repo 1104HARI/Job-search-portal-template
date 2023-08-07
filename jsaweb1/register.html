@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://kit.fontawesome.com/f986eb0a68.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="cbutton"><i class="fas fa-bars"></i></label>
+        <label class="logo">JSA</label>
+        <ul>
+            <li><a class="active" href="web1.html">Home</a></li>
+            <li><a href="web1.html">Jobs</a></li>
+            <li><a href="web1.html">Companies</a></li>
+            <li><a href="web1.html">Testimonials</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        </nav>
+
+    </div>
+    <div class="loginbox">
+        <form action="register.php" method="post">
+            <h2 style="color: white;margin-left: 30%;">Register</h2>
+           
+            <div class="inputbox">
+                <span style="color: white;" class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required name="email">
+                <label style="color: white;">Email</label>
+            </div>
+            <div class="inputbox">
+                <span style="color: white;" class="icon"><i class="fa-solid fa-lock" ></i></span>
+                <input  type="password" required name="password">
+                <label style="color: white;">Password</label>
+            </div>
+            <br/>
+        <button style="margin-left: 35%;" type="submit">Register</button>
+      
+
+        </form>
+        
+
+    </div>
+</body>
+</html>
